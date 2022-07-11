@@ -1,0 +1,54 @@
+By: https://youtu.be/zm5gpipw3HM
+
+Mern (MongoDb, Express, React, NodeJs)
+
+Iniciación:
+
+
+1. Colocar en la consola: npm init -y
+
+2. Luego colocar: npm i express express-fileupload mongoose dotenv fs-extra http-errors morgan
+
+3. Para guardar las imagenes sin necesidad de que sea local: npm i cloudinary
+
+4. Crear una carpeta que se llame "server" y dentro de ella un archivo "index.js"
+
+5. Para agregar los modulos "import", abre package.json y despues de "main": "index.js" agregamos "type": "module".
+
+6. Luego para activar el servidor, colocar en la consola: node server/index.js
+
+7. Modulo para reiniciar el servidor cada que hacemos cambios: npm i nodemon -D
+
+8. Luego colocar en package.js en "scripts" quitar "test" y en vez colocar: "dev": "nodemon server" 
+
+9. Entonces ya no se coloca en la linea de comandos "node server/index.js" sino "npm run dev"
+
+10. Para añadir rutas a nuestro servidor creamos una carpeta nueva llamada "routes" y dentro "posts.routes.js"
+
+11. Para tener el controller se hace creando una carpeta llamada "controllers" y dentro "posts.controller.js"
+
+12. La variable de entorno es por si se sube a github, que no se vean datos o info sensible, para ello se crea un archivo llamado .env
+
+13. El try-catch es importante para enviar el error antes que se ejecute y asi enviar respuestas http correctamente
+
+14. Para configurar cloudinary (repositorio de imagenes), nos vamos a app.js y creamos en el middleware el codigo, luego creamos una carpeta en server llamada "libs" y dentro cloudinary.js
+
+- https://cloudinary.com/
+
+15. Para crear un proyecto React (donde se encuentra el view), debemos escribir en la linea de comandos: npx create-react-app client
+
+- https://reactrouter.com/docs/en/v6/getting-started/overview
+
+- https://tailwindcss.com/
+
+- https://react-hot-toast.com/
+
+16. Luego para inicializarlo nos metemos a la carpeta con: cd client y luego ya dentro escribimos: npm start
+
+17. Para instalar la ultima actualización de react route dom: npm i react-router-dom. Para instalar modulo para los host: react-hot-toast. Modulo para iconos: react-icons. Modulo para enviar peticiones HTTP: axios. Validar desde el frontend: formik yup. (npm i react-router-dom react-hot-toast react-icons axios formik yup) 
+
+18. Para crear distintas partes de nuestra interfaz creamos una carpeta llama "components" y "pages" para las páginas, dentro de la carpeta "src"
+
+19. Para instalar tailwindcss: npm install -D tailwindcss postcss autoprefixer.
+
+20. Para crear los archivos postcss.config y tailwind.config: npx tailwindcss init -p
